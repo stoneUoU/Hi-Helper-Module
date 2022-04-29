@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Hi-Helper-Module_Tests' do
+  pod 'Hi-Helper-Module', :path => '../'
+  
+  
+end
