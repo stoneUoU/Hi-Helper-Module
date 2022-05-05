@@ -1,0 +1,16 @@
+PODS:
+  - Hi-Helper-Module (0.1.0)
+
+DEPENDENCIES:
+  - Hi-Helper-Module (from `../`)
+
+EXTERNAL SOURCES:
+  Hi-Helper-Module:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hi-Helper-Module: a12a0bfd07ec1fec68252489e661079c1b211cbb
+
+PODFILE CHECKSUM: cd412ffd6778742e66d7bc2a1d2cbd068bc67c9a
+
+COCOAPODS: 1.11.3
