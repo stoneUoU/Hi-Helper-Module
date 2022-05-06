@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Hi-Helper-Module/Classes/**/*'
+  s.source_files = 'Hi-Helper-Module/Classes/**/*.{h,m,swift}'
+  s.resources = ['Hi-Helper-Module/**/*.xcassets']
   
   s.dependency 'MBProgressHUD'
   s.dependency 'Hi-Router-Module'
