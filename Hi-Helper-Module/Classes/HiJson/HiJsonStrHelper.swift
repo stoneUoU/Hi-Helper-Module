@@ -10,7 +10,7 @@ import Foundation
 
 public class HiJsonStrHelper: NSObject {
     
-    @objc static func convertDictJsonStr(jsonStr:String) ->NSDictionary {
+    @objc public static func convertDictJsonStr(jsonStr:String) ->NSDictionary {
         
         let jsonData:Data = jsonStr.data(using: .utf8)!
         
