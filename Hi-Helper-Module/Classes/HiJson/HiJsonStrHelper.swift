@@ -10,7 +10,21 @@ import Foundation
 
 public class HiJsonStrHelper: NSObject {
     
-    @objc public static func convertDictJsonStr(jsonStr:String) ->NSDictionary {
+    @objc public static func convertDictToJsonStr(dict:[AnyHashable:Any]) -> String {
+        var result:String = ""
+        do {
+            //如果设置options为JSONSerialization.WritingOptions.prettyPrinted，则打印格式更好阅读
+            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.init(rawValue: 0))
+            if let JSONString = String(data: jsonData, encoding: String.Encoding.utf8) {
+                result = JSONString
+            }
+        } catch {
+            result = ""
+        }
+        return result
+    }
+    
+    @objc public static func convertJsonStrToDict(jsonStr:String) ->NSDictionary {
         
         let jsonData:Data = jsonStr.data(using: .utf8)!
         
@@ -21,7 +35,7 @@ public class HiJsonStrHelper: NSObject {
         return NSDictionary()
     }
     
-    @objc static func convertArrayJsonStr(jsonStr:String) ->NSArray {
+    @objc static func convertJsonStrToArray(jsonStr:String) ->NSArray {
         
         let jsonData:Data = jsonStr.data(using: .utf8)!
         

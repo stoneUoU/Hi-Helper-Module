@@ -2,7 +2,7 @@
 //  HiRegularHelper.swift
 //  OLMovie
 //
-//  Created by stone on 2019/9/1.
+//  Created by stone on 2022/5/9.
 //  Copyright © 2019 Stone. All rights reserved.
 //
 

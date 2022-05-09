@@ -34,7 +34,8 @@ TODO: Add long description of the pod here.
   s.resources = ['Hi-Helper-Module/**/*.xcassets']
   
   s.dependency 'MBProgressHUD'
-  s.dependency 'Hi-Router-Module'
+  s.dependency 'Hi-Router-Module', '0.2.0'
+  s.dependency 'Hi-Kit-Module'
   
   # s.resource_bundles = {
   #   'Hi-Helper-Module' => ['Hi-Helper-Module/Assets/*.png']
