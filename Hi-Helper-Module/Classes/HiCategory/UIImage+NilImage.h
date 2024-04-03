@@ -9,8 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//@interface UIImage (NilImage)
-//
-//@end
+@interface UIImage (NilImage)
+
+@end
 
 NS_ASSUME_NONNULL_END
